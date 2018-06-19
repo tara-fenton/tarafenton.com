@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Mina");
+/*div to hold all elements*/
+html {
+  font-family: "Mina";
+  background-color: black;
+}
+#container {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+/*BAR */
+.bar {
+  background-color: brown;
+  width: 400px;
+  height: 40px;
+  position: relative;
+}
+/*BARTENDER */
+#bartender {
+  background-color: purple;
+  width: 40px;
+  height: 80px; /*must be set here, tried to put it in the js*/
+  position: absolute; /*must be absolute!*/
+}
+/*CUSTOMER */
+.customer {
+  background-color: red;
+  width: 40px;
+  height: 80px;
+  position: absolute;
+}
+/*BEER */
+.beer {
+  background-color: yellow;
+  width: 15px;
+  height: 30px;
+  position: absolute;
+  /*  needs to be absolute */
+  display: none;
+}
+.glass {
+  background-color: white;
+  width: 15px;
+  height: 30px;
+  position: relative;
+}
+/*POINTS and LEVEL DISPLAYS */
+#points, #level {
+  font-size: 26px;
+  padding: 0 0 0 15px;
+  height: 30px;
+  color: white;
+  position: absolute;
+}
+#points {
+  top: 15px;
+}
+#level {
+  top: 560px;
+  left: 560px;
+}
+/*LIVES and END DISPLAYS */
+#lives {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  margin: 10px auto;
+  /* background-color: green; */
+  width: 100px;
+  height: 30px;
+}
+#lives .beer {
+  display: block;
+}
+#readyToServe {
+  background-color: black;
+  color: yellow;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+}
+#readyToServe h1 {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  top: 200px;
+}
+#end, #enterHighScore {
+    background-color: black;
+    color: purple;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+}
+#end h1, #enterHighScore h1 {
+  text-align: center;
+  font-size: 50px;
+}
+/*text input for high scores*/
+#highName {
+  font-size: 26px;
+  text-transform: uppercase;
+  background-color: black;
+  color: yellow;
+    padding: 10px;
+    border: 2px solid;
+}
+h2 {
+  display:inline-block;
+  padding: 25px 38px;
+}
+h3 {
+  color: yellow;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+button {
+  font-family: "Mina";
+  background-color: black;
+  border: none;
+  color: purple;
+  /*padding: 5px 15px;*/
+  font-size: 34px;
+  font-weight: bold;
+}
+/*to remove the blue highlight on button*/
+button:focus, input:focus {outline:0;}
+* {
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+#submit {
+  position: relative;
+  left: 398px;
+}
+#startGame {
+  margin: 200px 164px;
+}
+#resetGame {
+  margin: 0 164px;
+}
+#gameOver {
+  color: red;
+}
+
