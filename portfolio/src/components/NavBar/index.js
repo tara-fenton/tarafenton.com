@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import '../../App.css';
 
-class About extends Component {
+class NavBar extends Component {
   render() {
     return (
-      <div className="About">
-          Hi Im About
+      <div className="NavBar">
+          Hi Im NavBar
       </div>
     );
   }
 }
 
-export default About;
+export default NavBar;

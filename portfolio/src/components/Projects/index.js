@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import '../../App.css';
 
-class About extends Component {
+class Projects extends Component {
   render() {
     return (
-      <div className="About">
-          Hi Im About
+      <div className="Projects">
+        Hi Im projects
       </div>
     );
   }
 }
 
-export default About;
+export default Projects;

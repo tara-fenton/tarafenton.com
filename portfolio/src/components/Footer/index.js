@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import '../../App.css';
 
-class About extends Component {
+class Footer extends Component {
   render() {
     return (
-      <div className="About">
-          Hi Im About
+      <div className="Footer">
+        Hi Im Footer
       </div>
     );
   }
 }
 
-export default About;
+export default Footer;
