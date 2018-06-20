@@ -1,3 +1,21 @@
 .contact {
-  
+  padding: 40px;
+  margin: 0 auto;
+  font-size: 22px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+.icon {
+  padding: 0 14px 0 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: green;
 }

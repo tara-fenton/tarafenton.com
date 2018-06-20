@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import "./index.css";
 
-import headshot from "../../images/headshot.png";
+// import headshot from "../../images/headshot.png";
 
 class About extends Component {
   render() {
     return (
       <div className="about">
-        <div className="headshot">
+        {/* <div className="headshot">
           <img src={headshot} className="thumb" alt="Tara Fenton headshot" />
-        </div>
+        </div> */}
         <div className="right">
           <p>
             Coming from a flash development background before GA I was able to
