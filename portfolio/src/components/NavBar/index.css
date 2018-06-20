@@ -1,0 +1,18 @@
+.nav {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
