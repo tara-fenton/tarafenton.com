@@ -11,7 +11,7 @@ class NavBar extends Component {
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
-        <a href="http://tarafenton.com/resume/Tara%20Fenton.pdf">Resume</a>
+        <a href="http://tarafenton.com/resume/Tara%20Fenton.pdf" target="_blank">Resume</a>
       </div>
     );
   }
