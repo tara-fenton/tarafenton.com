@@ -1,36 +1,32 @@
 import React, { Component } from "react";
 import "./index.css";
+import data from "../../data/projects.json";
 
 class Projects extends Component {
   render() {
-    return (
-      <div className="project-container">
-        {/* Project 1 - Whats That */}
-        <div className="projects">
+
+    const projects = data.map(project => {
+      return (
+        <div className="projects" key={`/images/${project.display_id}`}>
           <div className="">
             <img
-              src={"/images/whatsThat.png"}
-              alt="What's That"
+              src={`/images/${project.image}`}
+              alt={`${project.title}`}
               className="project"
             />
           </div>
 
           <div className="right">
-            <div className="title">What's That</div>
+            <div className="title">{`${project.title}`}</div>
             <span className="tech">
-              Technologies: React Native, Clarifai API
+              Technologies: {`${project.techonologies}`}
             </span>
 
-            <p className="description">
-              This app let's you take a picture and it says out loud what is in
-              the image. Using the Clarifai API to determine what concepts are
-              in the image and using the react-native-speech npm package to
-              create audio output to describe what is in the image.
-            </p>
+            <p className="description">{`${project.description}`}</p>
             <div>
               <span className="github">
                 <a
-                  href="https://github.com/tara-fenton/whats-that-rn"
+                  href={`https://github.com/tara-fenton/${project.github}`}
                   target="_blank"
                 >
                   github
@@ -38,7 +34,7 @@ class Projects extends Component {
               </span>
               <span className="url">
                 <a
-                  href="http://tarafenton.com/projects/whatsThat/whatsThat.MP4"
+                  href={`http://tarafenton.com/${project.url}`}
                   target="_blank"
                 >
                   app
@@ -47,95 +43,9 @@ class Projects extends Component {
             </div>
           </div>
         </div>
-
-        {/* Project 2 - Beer Tapper */}
-        <div className="projects">
-          <div className="">
-            <img
-              src={"/images/beer.png"}
-              alt="Beer Tapper"
-              className="project"
-            />
-          </div>
-
-          <div className="right">
-            <div className="title">Beer Tapper</div>
-            <span className="tech">Technologies: JavaScript, CSS</span>
-
-            <p className="description">
-              This game is insprired by the arcade game Beer Tapper. The rules
-              are simple.
-              <ol>
-                <li>
-                  Serve your customers a beer before they reach the end of the
-                  bar.
-                </li>
-                <li>Don’t over pour.</li>
-                <li>Collect your empty glasses.</li>
-              </ol>
-            </p>
-            <div>
-              <span className="github">
-                <a
-                  href="https://github.com/tara-fenton/beer-tapper-js/blob/master/js/app.js"
-                  target="_blank"
-                >
-                  github
-                </a>
-              </span>
-              <span className="url">
-                <a
-                  href="http://tarafenton.com/projects/beer-tapper-js/"
-                  target="_blank"
-                >
-                  game
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* Project 3 - Beer Tapper */}
-        <div className="projects">
-          <div className="">
-            <img
-              src={"/images/connect.png"}
-              alt="Connect Four"
-              className="project"
-            />
-          </div>
-
-          <div className="right">
-            <div className="title">Connect 4</div>
-            <span className="tech">Technologies: JavaScript, CSS</span>
-
-            <p className="description">
-              This game is inspired by the board game Connect Four. To win you
-              must be the first player to get four of your colored checkers
-              connecting in a row either horizontally, vertically or diagonally.
-            </p>
-            <div>
-              <span className="github">
-                <a
-                  href="https://github.com/tara-fenton/tic-tac-toe-js/blob/master/connect4/js/connect4script.js"
-                  target="_blank"
-                >
-                  github
-                </a>
-              </span>
-              <span className="url">
-                <a
-                  href="http://tarafenton.com/projects/connect4/"
-                  target="_blank"
-                >
-                  game
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+      );
+    });
+    return <div className="project-container">{projects}</div>;
   }
 }
 

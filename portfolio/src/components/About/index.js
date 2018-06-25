@@ -13,6 +13,7 @@ class About extends Component {
           />
         </div>
         <div className="right">
+          <h2>Tara Fenton</h2>
           <p>
             I'm looking for an opportunity that will allow me to continue
             creating exciting apps and exploring the newest techonologies.
