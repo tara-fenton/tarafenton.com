@@ -13,19 +13,20 @@ class About extends Component {
           />
         </div>
         <div className="right">
-          <h2>Tara Fenton</h2>
-          <p>
-            I'm looking for an opportunity that will allow me to continue
-            creating exciting apps and exploring the newest techonologies.
-          </p>
+          <span className="name">Tara Fenton</span>
+          <span className="tagline">Passionate Developer, Lifelong Learner, Firecracker</span>
           <p>
             Coming from a flash development background I am able to be an
-            inspiration and resource to others, while pushing myself and being
-            fearless throughout my career.
+            inspiration and resource to others.
           </p>
+
           <p>
             I'm a great communicator with an excellent sense of humor. I'm a
             team player that's motivated & driven.
+          </p>
+          <p>
+            I'm looking for an opportunity that will allow me to continue
+            creating exciting apps while exploring the newest techonologies.
           </p>
         </div>
       </div>

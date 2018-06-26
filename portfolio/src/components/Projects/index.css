@@ -11,12 +11,16 @@
 .project {
   width: 200px;
   height: 200px;
+  border: 2px solid black;
+}
+.project-image {
+
 }
 .description {
   font-size: 12px;
 }
-.url {
-  padding: 0 0 0 10px;
+.github {
+  padding: 0 10px 0 0;
 }
 .title {
   padding: 0 0 10px 0;

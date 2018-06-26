@@ -4,11 +4,10 @@ import data from "../../data/projects.json";
 
 class Projects extends Component {
   render() {
-
     const projects = data.map(project => {
       return (
-        <div className="projects" key={`/images/${project.display_id}`}>
-          <div className="">
+        <div className="projects" key={`${project.display_id}`}>
+          <div className="project-image">
             <img
               src={`/images/${project.image}`}
               alt={`${project.title}`}
@@ -24,22 +23,42 @@ class Projects extends Component {
 
             <p className="description">{`${project.description}`}</p>
             <div>
-              <span className="github">
-                <a
-                  href={`https://github.com/tara-fenton/${project.github}`}
-                  target="_blank"
-                >
-                  github
-                </a>
-              </span>
-              <span className="url">
-                <a
-                  href={`http://tarafenton.com/${project.url}`}
-                  target="_blank"
-                >
-                  app
-                </a>
-              </span>
+              {project.github ? (
+                <span className="github">
+                  <a
+                    href={`https://github.com/tara-fenton/${project.github}`}
+                    target="_blank"
+                  >
+                    github
+                  </a>
+                </span>
+              ) : (
+                ""
+              )}
+              {project.url ? (
+                <span className="url">
+                  <a
+                    href={`http://tarafenton.com/${project.url}`}
+                    target="_blank"
+                  >
+                    app
+                  </a>
+                </span>
+              ) : (
+                ""
+              )}
+              {project.website ? (
+                <span className="website">
+                  <a
+                    href={`${project.website}`}
+                    target="_blank"
+                  >
+                    website
+                  </a>
+                </span>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>

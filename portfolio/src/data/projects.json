@@ -1,7 +1,49 @@
-[{
-  "title": "What's That",
-  "description": "This app let's you take a picture and it says out loud what is in the image. Using the Clarifai API to determine what concepts are in the image and using the react-native-speech npm package to create audio output to describe what is in the image.",
+[
+{
+  "title": "Victoria's Secret",
+  "description": "An iPad app for Victoria's Secret's empolyee training used to educate all retail teams from sales floor to executive-level. Updated bi-monthly with new assets and features.",
   "display_id": "1",
+  "featured": "false",
+  "github": "",
+  "image": "vs.png",
+  "techonologies": "Actionscript, iPad",
+  "url": "projects/vs/VScapture_SportsBraAssessment_20150901.mp4"
+},
+{
+  "title": "Brooks Brothers",
+  "description": "An iPad app for Brooks Brothers' empolyee training used to educate all retail teams from sales floor to executive-level. Debugged application with tech team from distribution to user flow.",
+  "display_id": "2",
+  "featured": "false",
+  "github": "",
+  "image": "brooks.png",
+  "techonologies": "Actionscript, iPad",
+  "url": "projects/brooks/Brooks_NRF_Demo.mp4"
+},
+{
+  "title": "The Limited",
+  "description": "An iPad app for The Limited's empolyee training used to educate all retail teams from sales floor to executive-level. Custom dashboard component used to tailor the application to different departments.",
+  "display_id": "3",
+  "featured": "false",
+  "github": "",
+  "image": "thelimited.png",
+  "techonologies": "Actionscript, iPad",
+  "url": "projects/thelimited/Limited Tutorial 2015_V1.mp4"
+},
+{
+  "title": "Marvel Entertainment",
+  "description": "Flash applications throughout Marvel site using AS3. Created custom API to deliver video ads for games on Marvel and Marvel Kids. Supported relaunch of Marvel.com using Zend framework coded in PHP, HTML, CSS and JavaScript.",
+  "display_id": "4",
+  "featured": "false",
+  "github": "",
+  "website": "http://marvel.com",
+  "image": "marvel.png",
+  "techonologies": "Actionscript, PHP",
+  "url": ""
+},
+{
+  "title": "What's That",
+  "description": "An iPhone app let's you take a picture and it says out loud what is in the image. Using the Clarifai API to determine what concepts are in the image and using the react-native-speech npm package to create audio output to describe what is in the image.",
+  "display_id": "5",
   "featured": "false",
   "github": "whats-that-rn",
   "image": "whatsThat.png",
@@ -10,8 +52,8 @@
 },
 {
   "title": "Beer Tapper",
-  "description": "This game is insprired by the arcade game Beer Tapper. The rules are simple.<ol><li>Serve your customers a beer before they reach the end of the bar.</li><li>Don’t over pour.</li><li>Collect your empty glasses.</li></ol>",
-  "display_id": "2",
+  "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
+  "display_id": "6",
   "featured": "false",
   "github": "beer-tapper-js/blob/master/js/app.js",
   "image": "beer.png",
@@ -20,18 +62,8 @@
 },
 {
   "title": "Connect Four",
-  "description": "This game is inspired by the board game Connect Four. To win you must be the first player to get four of your colored checkers connecting in a row either horizontally, vertically or diagonally.",
-  "display_id": "3",
-  "featured": "false",
-  "github": "tic-tac-toe-js/blob/master/connect4/js/connect4script.js",
-  "image": "connect.png",
-  "techonologies": "JavaScript, CSS",
-  "url": "projects/connect4/"
-},
-{
-  "title": "Connect Four",
-  "description": "This game is inspired by the board game Connect Four. To win you must be the first player to get four of your colored checkers connecting in a row either horizontally, vertically or diagonally.",
-  "display_id": "4",
+  "description": "A game that is inspired by the board game Connect Four. To win you must be the first player to get four of your colored checkers connecting in a row either horizontally, vertically or diagonally.",
+  "display_id": "7",
   "featured": "false",
   "github": "tic-tac-toe-js/blob/master/connect4/js/connect4script.js",
   "image": "connect.png",
