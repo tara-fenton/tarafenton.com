@@ -34,3 +34,12 @@ a:hover {
   align-items: flex-start;
   padding: 0 0 0 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    display: block;
+  }
+  .right {
+    padding: 0;
+  }
+}

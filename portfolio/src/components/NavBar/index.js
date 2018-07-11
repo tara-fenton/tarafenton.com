@@ -10,7 +10,7 @@ class NavBar extends Component {
 
         <div className="nav">
           {/* <span className="logo"><img src="/images/TF_logo.jpg" /></span> */}
-          <Link to="/">Home</Link>
+          {/* <Link to="/">Home</Link> */}
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
