@@ -4,118 +4,76 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="skills.json"></script>
 <script>
-
 var local_data = data;
 
 var width = 960,
-    height = 500;
+  height = 500;
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+var svg = d3
+  .select("body")
+  .append("svg")
+  .attr("width", width)
+  .attr("height", height);
 
-var defs = svg.append('svg:defs');
+var defs = svg.append("svg:defs");
 
 // var nodes = d3.range(200).map(function() { return {radius: Math.random() * 12 + 4}; }),
-var nodes = local_data.map((d, i) => { return {radius: Math.random() * 42 + 28, image: local_data[i].image}; }),
-    root = nodes[0],
-    color = d3.scale.category10();
+var nodes = local_data.map((d, i) => {
+    return { radius: Math.random() * 42 + 28, image: local_data[i].image };
+  }),
+  root = nodes[0],
+  color = d3.scale.category10();
 root.radius = 0;
 root.fixed = true;
 console.log(nodes);
-var force = d3.layout.force()
-    .gravity(0.05)
-    .charge(function(d, i) { return i ? 0 : -3000; })
-    .nodes(nodes)
-    .size([width, height]);
+var force = d3.layout
+  .force()
+  .gravity(0.05)
+  .charge(function(d, i) {
+    return i ? 0 : -3000;
+  })
+  .nodes(nodes)
+  .size([width, height]);
 force.start();
 
-// defs.append("svg:pattern")
-//     // .attr("id", "grump_avatar" + i)
-//     .attr("id", "grump_avatar")
-//     .attr("width", width)
-//     .attr("height", height)
-//     .attr("patternUnits", "userSpaceOnUse")
-//     .append("svg:image")
-//     .attr("xlink:href", "./images/angularjs-original.svg")
-//     // .attr("width", config.avatar_size)
-//     // .attr("height", config.avatar_size)
-//     .attr("x", 0)
-//     .attr("y", 0);
-//
-//     var circle = svg.append("circle")
-//         .attr("transform", "translate(" + 100 + "," + 100 + ")")
-//         // .attr("transform", "translate(" + d.posx + "," + d.posy + ")")
-//         .attr("cx", 100 / 2)
-//         // .attr("cx", config.avatar_size / 2)
-//         .attr("cy", 100 / 2)
-//         // .attr("cy", config.avatar_size / 2)
-//         .attr("r", 100 / 2)
-//         // .attr("r", config.avatar_size / 2)
-//         .style("fill", "#fff")
-//         .style("fill", "url(#grump_avatar)");
-
-
-// svg.selectAll("circle")
-//     .data(nodes.slice(1))
-//   .enter().append("circle")
-//     // .attr("transform", "translate(" + 100 + "," + 100 + ")")
-//     // .attr("cx", 100 / 2)
-//     // // .attr("cx", config.avatar_size / 2)
-//     // .attr("cy", 100 / 2)
-//     .attr("r", function(d) { return d.radius; })
-//     // .style("fill", function(d, i) { return color("url(#grump_avatar)"); });
-//     // .style("fill", function(d, i) { return color(i % 3); });
-//     .style("fill", "#fff");
-//    .style("fill", "url(#grump_avatar)");
-// svg.selectAll("pattern")
-//     .data(nodes.slice(1))
-//     .enter().append("pattern")
-//     .attr("patternUnits", "userSpaceOnUse")
-//     .attr("id", function(d, i) { return "skill" + i; })
-
-
-// svg.selectAll("image")
-//     .data(nodes.slice(1))
-//   .enter().append("image")
-//     .attr("xlink:href", function(d) { return "images/" + d.image; })
-//     .attr("id", function(d, i) { return "skill" + i; })
-
 /// here the circles are created and the fill is the color
-svg.selectAll("image")
-    .data(nodes.slice(1))
-  .enter().append("svg:pattern")
-    .attr("id", function(d, i) { return "skill" + i; })
-    .attr("width", 150)
-    .attr("height", 150)
-    .attr("patternUnits", "userSpaceOnUse")
+svg
+  .selectAll("image")
+  .data(nodes.slice(1))
+  .enter()
+  .append("svg:pattern")
+  .attr("id", function(d, i) {
+    return "skill" + i;
+  })
+  .attr("width", 150)
+  .attr("height", 150)
+  .attr("patternUnits", "userSpaceOnUse")
   .append("svg:image")
-    // .attr("r", function(d) { return d.radius; })
-    .attr("xlink:href", function(d) { return "images/" + d.image; })
-    .attr("width", 150)
-    .attr("height", 150)
-   .style("fill", function(d, i) { return  "url(#skill" + i + ")"; });
+  .attr("xlink:href", function(d) {
+    return "images/" + d.image;
+  })
+  .attr("width", 150)
+  .attr("height", 150)
+  .style("fill", function(d, i) {
+    return "url(#skill" + i + ")";
+  });
 
-   // var circle = svg.append("circle")
-   //     .attr("transform", "translate(" + d.posx + "," + d.posy + ")")
-   //     .attr("cx", config.avatar_size / 2)
-   //     .attr("cy", config.avatar_size / 2)
-   //     .attr("r", config.avatar_size / 2)
-   //     .style("fill", "#fff")
-   //     .style("fill", "url(#grump_avatar" + i + ")");
+svg
+  .selectAll("circle")
+  .data(nodes.slice(1))
+  .enter()
+  .append("circle")
+  .attr("transform", "translate(" + 100 + "," + 100 + ")")
+  .attr("cx", 100 / 2)
+  .attr("cy", 100 / 2)
+  .attr("r", function(d) {
+    return d.radius;
+  })
+  .style("fill", "#fff")
+  .style("fill", function(d, i) {
+    return "url(#skill" + i + ")";
+  });
 
-       svg.selectAll("circle")
-           .data(nodes.slice(1))
-         .enter().append("circle")
-           .attr("transform", "translate(" + 100 + "," + 100 + ")")
-           .attr("cx", 100 / 2)
-           // // .attr("cx", config.avatar_size / 2)
-           .attr("cy", 100 / 2)
-           .attr("r", function(d) { return d.radius; })
-           // .style("fill", function(d, i) { return color("url(#grump_avatar)"); });
-           // .style("fill", function(d, i) { return color(i % 3); });
-           .style("fill", "#fff")
-          .style("fill", function(d,i) { return "url(#skill" + i + ")"; } );
 force.on("tick", function(e) {
   var q = d3.geom.quadtree(nodes),
     i = 0,

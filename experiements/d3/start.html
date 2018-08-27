@@ -4,36 +4,51 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="skills.json"></script>
 <script>
-
 var local_data = data;
 
 // set a width and height for our SVG
 var margin = 0.8,
-    width = window.innerWidth*margin,
-    height = window.innerHeight*margin;
+  width = window.innerWidth * margin,
+  height = window.innerHeight * margin;
 
 // add a SVG to the body for our viz
-var svg=d3.select('body').append('svg')
-    .attr('width', width)
-    .attr('height', height);
+var svg = d3
+  .select("body")
+  .append("svg")
+  .attr("width", width)
+  .attr("height", height);
 
 // create empty nodes array
-var nodes = {};
-
-local_data.forEach(function(link) {
-    link.image = nodes[link.image] ||
-        (nodes[link.image] = {image: "images/" + link.image});
-
+var nodes = local_data.forEach(function(link) {
+  link.image =
+    nodes[link.image] ||
+    (nodes[link.image] = { image: "images/" + link.image });
 });
 
-var node = svg.selectAll('.node')
-    .data(d3.values(nodes))
-    .enter().append('g')
-    .attr('class', 'node')
+var node = svg
+  .selectAll(".node")
+  .data(d3.values(nodes))
+  .enter()
+  .append("g")
+  .attr("class", "node");
 
-  node.append('image')
-       .attr('xlink:href', function (d) { return d.image; })
-       .attr("x", function(d,i) { return 125*i; })
+node
+  .append("image")
+  .attr("xlink:href", function(d) {
+    return d.image;
+  })
+  .attr("x", function(d, i) {
+    return 125 * i;
+  });
 
+var force = d3.layout
+  .force()
+  .gravity(0.05)
+  .charge(function(d, i) {
+    return i ? 0 : -3000;
+  })
+  .nodes(d3.values(nodes))
+  .size([width, height]);
+force.start();
 
 </script>
