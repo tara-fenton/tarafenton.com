@@ -45,15 +45,30 @@ svg
   .attr("id", function(d, i) {
     return "skill" + i;
   })
-  .attr("width", 150)
-  .attr("height", 150)
+  // .attr("width", 150)
+  .attr("width", function(d) {
+    return d.radius * 2;
+  })
+  .attr("height", function(d) {
+    return d.radius * 2;
+  })
+  .attr("x", function(d) {
+    return d.radius;
+  })
+  .attr("y", function(d) {
+    return d.radius;
+  })
   .attr("patternUnits", "userSpaceOnUse")
   .append("svg:image")
   .attr("xlink:href", function(d) {
     return "images/" + d.image;
   })
-  .attr("width", 150)
-  .attr("height", 150)
+  .attr("width", function(d) {
+    return d.radius * 2;
+  })
+  .attr("height", function(d) {
+    return d.radius * 2;
+  })
   .style("fill", function(d, i) {
     return "url(#skill" + i + ")";
   });
@@ -63,9 +78,10 @@ svg
   .data(nodes.slice(1))
   .enter()
   .append("circle")
-  .attr("transform", "translate(" + 100 + "," + 100 + ")")
-  .attr("cx", 100 / 2)
-  .attr("cy", 100 / 2)
+  .attr("transform", function(d) {
+    return "translate(" + d.x + d.radius + "," + d.y + d.radius + ")";
+  })
+
   .attr("r", function(d) {
     return d.radius;
   })
@@ -79,14 +95,16 @@ force.on("tick", function(e) {
     i = 0,
     n = nodes.length;
   while (++i < n) q.visit(collide(nodes[i]));
-  svg
-    .selectAll("circle")
-    .attr("cx", function(d) {
-      return d.x;
-    })
-    .attr("cy", function(d) {
-      return d.y;
-    });
+  svg.selectAll("circle").attr("transform", function(d) {
+    console.log("translate(" + d.x + "," + d.y + ")");
+    return "translate(" + d.x + "," + d.y + ")";
+  });
+  // .attr("cx", function(d) {
+  //   return d.x;
+  // })
+  // .attr("cy", function(d) {
+  //   return d.y;
+  // });
 });
 svg.on("mousemove", function() {
   var p1 = d3.mouse(this);
