@@ -1,0 +1,144 @@
+var data = [{
+  "title": "Angular",
+  "description": "Details",
+  "display_id": "1",
+  "featured": "false",
+  "image": "angularjs-original.svg",
+  "level": "5"
+},
+{
+  "title": "AWS",
+  "description": "Details",
+  "display_id": "2",
+  "featured": "false",
+  "image": "amazonwebservices-plain-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "CSS",
+  "description": "Details",
+  "display_id": "3",
+  "featured": "false",
+  "image": "css3-plain-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Docker",
+  "description": "Details",
+  "display_id": "4",
+  "featured": "false",
+  "image": "docker-plain-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Express",
+  "description": "Details",
+  "display_id": "5",
+  "featured": "false",
+  "image": "express-original.svg",
+  "level": "5"
+},
+{
+  "title": "Github",
+  "description": "Details",
+  "display_id": "6",
+  "featured": "false",
+  "image": "github-original.svg",
+  "level": "5"
+},
+{
+  "title": "HTML",
+  "description": "Details",
+  "display_id": "7",
+  "featured": "false",
+  "image": "html5-plain-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Illustrator",
+  "description": "Details",
+  "display_id": "8",
+  "featured": "false",
+  "image": "illustrator-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Java",
+  "description": "Details",
+  "display_id": "9",
+  "featured": "false",
+  "image": "java-original.svg",
+  "level": "5"
+},
+{
+  "title": "JavaScript",
+  "description": "Details",
+  "display_id": "10",
+  "featured": "false",
+  "image": "javascript-plain.svg",
+  "level": "5"
+},
+{
+  "title": "jQuery",
+  "description": "Details",
+  "display_id": "11",
+  "featured": "false",
+  "image": "jquery-plain-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Node.js",
+  "description": "Details",
+  "display_id": "12",
+  "featured": "false",
+  "image": "nodejs-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Photoshop",
+  "description": "Details",
+  "display_id": "13",
+  "featured": "false",
+  "image": "photoshop-plain.svg",
+  "level": "5"
+},
+{
+  "title": "PHP",
+  "description": "Details",
+  "display_id": "14",
+  "featured": "false",
+  "image": "php-plain.svg",
+  "level": "5"
+},
+{
+  "title": "Postgres",
+  "description": "Details",
+  "display_id": "15",
+  "featured": "false",
+  "image": "postgresql-plain-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Rails",
+  "description": "Details",
+  "display_id": "16",
+  "featured": "false",
+  "image": "rails-plain-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "React",
+  "description": "Details",
+  "display_id": "17",
+  "featured": "false",
+  "image": "react-original-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Ruby",
+  "description": "Details",
+  "display_id": "18",
+  "featured": "false",
+  "image": "ruby-plain-wordmark.svg",
+  "level": "5"
+}]
