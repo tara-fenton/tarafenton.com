@@ -9,15 +9,17 @@ var margin = 0.8,
   width = window.screen.width * margin,
   height = window.screen.height * margin;
 
-var svg = d3
-  .select("body")
-  .append("svg")
-  .attr("width", width)
-  .attr("height", height);
+
 class Home extends Component {
-
   componentDidMount() {
-
+    this.loadSkills();
+  }
+  loadSkills() {
+    var svg = d3
+      .select("body")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
     var nodes = local_data.map((d, i) => {
         return { radius: Math.random() * 60 + 28, image: local_data[i].image };
       }),
