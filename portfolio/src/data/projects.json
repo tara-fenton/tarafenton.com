@@ -2,7 +2,7 @@
   {
     "title": "Ewokese",
     "description": "A react frontend, node and express backend application with user auth that allows users to send messages.",
-    "display_id": "5",
+    "display_id": "1",
     "featured": "false",
     "github": "ewokese-react",
     "image": "ewokese.png",
@@ -13,7 +13,7 @@
 {
   "title": "What's That",
   "description": "An iPhone app let's you take a picture and it says out loud what is in the image. Using the Clarifai API to determine what concepts are in the image and using the react-native-speech npm package to create audio output to describe what is in the image.",
-  "display_id": "5",
+  "display_id": "2",
   "featured": "false",
   "github": "whats-that-rn",
   "image": "whatsThat.png",
@@ -23,7 +23,7 @@
 {
   "title": "Beer Tapper",
   "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
-  "display_id": "6",
+  "display_id": "3",
   "featured": "false",
   "github": "beer-tapper-js/blob/master/js/app.js",
   "image": "beer.png",
@@ -33,7 +33,7 @@
 {
   "title": "Connect Four",
   "description": "A game that is inspired by the board game Connect Four. To win you must be the first player to get four of your colored checkers connecting in a row either horizontally, vertically or diagonally.",
-  "display_id": "7",
+  "display_id": "4",
   "featured": "false",
   "github": "tic-tac-toe-js/blob/master/connect4/js/connect4script.js",
   "image": "connect.png",
@@ -43,7 +43,7 @@
 {
   "title": "Victoria's Secret",
   "description": "An iPad app for Victoria's Secret's empolyee training used to educate all retail teams from sales floor to executive-level. Updated bi-monthly with new assets and features.",
-  "display_id": "1",
+  "display_id": "5",
   "featured": "false",
   "github": "",
   "image": "vs.png",
@@ -53,7 +53,7 @@
 {
   "title": "Brooks Brothers",
   "description": "An iPad app for Brooks Brothers' empolyee training used to educate all retail teams from sales floor to executive-level. Debugged application with tech team from distribution to user flow.",
-  "display_id": "2",
+  "display_id": "6",
   "featured": "false",
   "github": "",
   "image": "brooks.png",
@@ -63,7 +63,7 @@
 {
   "title": "The Limited",
   "description": "An iPad app for The Limited's empolyee training used to educate all retail teams from sales floor to executive-level. Custom dashboard component used to tailor the application to different departments.",
-  "display_id": "3",
+  "display_id": "7",
   "featured": "false",
   "github": "",
   "image": "thelimited.png",
@@ -73,7 +73,7 @@
 {
   "title": "Marvel Entertainment",
   "description": "Flash applications throughout Marvel site using AS3. Created custom API to deliver video ads for games on Marvel and Marvel Kids. Supported relaunch of Marvel.com using Zend framework coded in PHP, HTML, CSS and JavaScript.",
-  "display_id": "4",
+  "display_id": "8",
   "featured": "false",
   "github": "",
   "website": "http://marvel.com",
