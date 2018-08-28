@@ -12,7 +12,7 @@ class NavBar extends Component {
 
         <div className="nav">
           {/* <span className="logo"><img src="/images/TF_logo.jpg" /></span> */}
-          {/* <Link to="/">Home</Link> */}
+          <NavLink to="/">Home</NavLink>
           <NavLink to="/about" activeClassName="active">About</NavLink>
           <NavLink to="/projects" activeClassName="active">Projects</NavLink>
           <NavLink to="/contact" activeClassName="active">Contact</NavLink>

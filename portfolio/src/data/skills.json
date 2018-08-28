@@ -11,7 +11,7 @@
   "description": "Details",
   "display_id": "2",
   "featured": "false",
-  "image": "amazonwebservices-plain-wordmark.svg",
+  "image": "amazonwebservices-original.svg",
   "level": "5"
 },
 {
@@ -19,7 +19,7 @@
   "description": "Details",
   "display_id": "3",
   "featured": "false",
-  "image": "css3-plain-wordmark.svg",
+  "image": "css3-original.svg",
   "level": "5"
 },
 {
@@ -27,7 +27,7 @@
   "description": "Details",
   "display_id": "4",
   "featured": "false",
-  "image": "docker-plain-wordmark.svg",
+  "image": "docker-plain.svg",
   "level": "5"
 },
 {
@@ -35,7 +35,7 @@
   "description": "Details",
   "display_id": "5",
   "featured": "false",
-  "image": "express-original.svg",
+  "image": "express-original-wordmark.svg",
   "level": "5"
 },
 {
@@ -51,7 +51,7 @@
   "description": "Details",
   "display_id": "7",
   "featured": "false",
-  "image": "html5-plain-wordmark.svg",
+  "image": "html5-original.svg",
   "level": "5"
 },
 {
@@ -83,7 +83,7 @@
   "description": "Details",
   "display_id": "11",
   "featured": "false",
-  "image": "jquery-plain-wordmark.svg",
+  "image": "jquery-original.svg",
   "level": "5"
 },
 {
@@ -115,7 +115,7 @@
   "description": "Details",
   "display_id": "15",
   "featured": "false",
-  "image": "postgresql-plain-wordmark.svg",
+  "image": "postgresql-plain.svg",
   "level": "5"
 },
 {
@@ -123,7 +123,7 @@
   "description": "Details",
   "display_id": "16",
   "featured": "false",
-  "image": "rails-plain-wordmark.svg",
+  "image": "rails-plain.svg",
   "level": "5"
 },
 {
@@ -131,7 +131,7 @@
   "description": "Details",
   "display_id": "17",
   "featured": "false",
-  "image": "react-original-wordmark.svg",
+  "image": "react-original.svg",
   "level": "5"
 },
 {
@@ -139,6 +139,6 @@
   "description": "Details",
   "display_id": "18",
   "featured": "false",
-  "image": "ruby-plain-wordmark.svg",
+  "image": "ruby-original.svg",
   "level": "5"
 }]

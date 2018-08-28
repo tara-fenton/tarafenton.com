@@ -1,4 +1,45 @@
 [
+  {
+    "title": "Ewokese",
+    "description": "A react frontend, node and express backend application with user auth that allows users to send messages.",
+    "display_id": "5",
+    "featured": "false",
+    "github": "ewokese-react",
+    "image": "ewokese.png",
+    "techonologies": "React, Node, Express",
+    "website": "https://desolate-caverns-81729.herokuapp.com/login",
+    "url": ""
+  },
+{
+  "title": "What's That",
+  "description": "An iPhone app let's you take a picture and it says out loud what is in the image. Using the Clarifai API to determine what concepts are in the image and using the react-native-speech npm package to create audio output to describe what is in the image.",
+  "display_id": "5",
+  "featured": "false",
+  "github": "whats-that-rn",
+  "image": "whatsThat.png",
+  "techonologies": "React Native, Clarifai API",
+  "url": "projects/whatsThat/whatsThat.MP4"
+},
+{
+  "title": "Beer Tapper",
+  "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
+  "display_id": "6",
+  "featured": "false",
+  "github": "beer-tapper-js/blob/master/js/app.js",
+  "image": "beer.png",
+  "techonologies": "JavaScript, CSS",
+  "url": "projects/beer-tapper-js/"
+},
+{
+  "title": "Connect Four",
+  "description": "A game that is inspired by the board game Connect Four. To win you must be the first player to get four of your colored checkers connecting in a row either horizontally, vertically or diagonally.",
+  "display_id": "7",
+  "featured": "false",
+  "github": "tic-tac-toe-js/blob/master/connect4/js/connect4script.js",
+  "image": "connect.png",
+  "techonologies": "JavaScript, CSS",
+  "url": "projects/connect4/"
+},
 {
   "title": "Victoria's Secret",
   "description": "An iPad app for Victoria's Secret's empolyee training used to educate all retail teams from sales floor to executive-level. Updated bi-monthly with new assets and features.",
@@ -39,34 +80,4 @@
   "image": "marvel.png",
   "techonologies": "Actionscript, PHP",
   "url": ""
-},
-{
-  "title": "What's That",
-  "description": "An iPhone app let's you take a picture and it says out loud what is in the image. Using the Clarifai API to determine what concepts are in the image and using the react-native-speech npm package to create audio output to describe what is in the image.",
-  "display_id": "5",
-  "featured": "false",
-  "github": "whats-that-rn",
-  "image": "whatsThat.png",
-  "techonologies": "React Native, Clarifai API",
-  "url": "projects/whatsThat/whatsThat.MP4"
-},
-{
-  "title": "Beer Tapper",
-  "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
-  "display_id": "6",
-  "featured": "false",
-  "github": "beer-tapper-js/blob/master/js/app.js",
-  "image": "beer.png",
-  "techonologies": "JavaScript, CSS",
-  "url": "projects/beer-tapper-js/"
-},
-{
-  "title": "Connect Four",
-  "description": "A game that is inspired by the board game Connect Four. To win you must be the first player to get four of your colored checkers connecting in a row either horizontally, vertically or diagonally.",
-  "display_id": "7",
-  "featured": "false",
-  "github": "tic-tac-toe-js/blob/master/connect4/js/connect4script.js",
-  "image": "connect.png",
-  "techonologies": "JavaScript, CSS",
-  "url": "projects/connect4/"
 }]
