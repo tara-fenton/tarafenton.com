@@ -14,7 +14,7 @@ class Contact extends Component {
         <div className="contact-image">
           <img src="images/contact.png" alt="Gregor Cresnar Noun Project" />
         </div>
-        <div class="right">
+        <div className="right">
           <div className="contact-item">
             <span className="icon">
               <FaGlobe />
