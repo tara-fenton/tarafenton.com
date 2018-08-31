@@ -2,19 +2,20 @@ import React, { Component } from "react";
 import "./index.css";
 import local_data from "../../data/skills.json";
 import * as d3 from "d3";
-import { withFauxDOM } from "react-faux-dom";
-
-// set a width and height for our SVG
-var margin = 0.8,
-  width = window.screen.width * margin,
-  height = window.screen.height * margin;
-
 
 class Home extends Component {
   componentDidMount() {
     this.loadSkills();
   }
   loadSkills() {
+    // set a width and height for our SVG
+    var w = window,
+        d = document,
+        documentElement = d.documentElement,
+        body = d.getElementsByTagName('body')[0],
+      width = w.innerWidth || documentElement.clientWidth || body.clientWidth,
+      height = w.innerHeight - 50 || documentElement.clientHeight - 50 || body.clientHeight - 100;
+
     var svg = d3
       .select("body")
       .append("svg")
@@ -60,6 +61,7 @@ class Home extends Component {
         return d.radius;
       })
       .attr("class", "ball")
+      .attr("stroke", "#000")
       .attr("patternUnits", "userSpaceOnUse")
       .append("svg:image")
       .attr("xlink:href", function(d) {
@@ -80,6 +82,7 @@ class Home extends Component {
       .data(nodes.slice(1))
       .enter()
       .append("circle")
+      .attr("color", "#000")
       .attr("class", "ball")
       .attr("r", function(d) {
         return d.radius;
@@ -87,7 +90,7 @@ class Home extends Component {
       .style("fill", "#000")
       .style("fill", function(d, i) {
         return "url(#skill" + i + ")";
-      });
+      })
 
     force.on("tick", function(e) {
       var q = d3.geom.quadtree(nodes),
@@ -141,4 +144,4 @@ class Home extends Component {
   }
 }
 
-export default withFauxDOM(Home);
+export default Home;
