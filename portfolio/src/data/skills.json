@@ -1,4 +1,12 @@
 [{
+  "title": "Dummy",
+  "description": "Node used to make animation",
+  "display_id": "0",
+  "featured": "",
+  "image": "",
+  "level": ""
+},
+{
   "title": "Angular",
   "description": "Details",
   "display_id": "1",

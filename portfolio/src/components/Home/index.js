@@ -45,52 +45,45 @@ class Home extends Component {
       .data(nodes.slice(1))
       .enter()
       .append("svg:pattern")
-      .attr("id", function(d, i) {
-        return "skill" + i;
-      })
-      .attr("width", function(d) {
-        return d.radius * 2 - padding;
-      })
-      .attr("height", function(d) {
-        return d.radius * 2 - padding;
-      })
-      .attr("x", function(d) {
-        return d.radius;
-      })
-      .attr("y", function(d) {
-        return d.radius;
-      })
-      .attr("class", "ball")
-      .attr("stroke", "#000")
-      .attr("patternUnits", "userSpaceOnUse")
+          .attr("id", function(d, i) {
+            return "skill" + i;
+          })
+          .attr("width", function(d) {
+            return d.radius * 2 - padding;
+          })
+          .attr("height", function(d) {
+            return d.radius * 2 - padding;
+          })
+          .attr("x", function(d) {
+            return d.radius;
+          })
+          .attr("y", function(d) {
+            return d.radius;
+          })
+          .attr("patternUnits", "userSpaceOnUse")
       .append("svg:image")
-      .attr("xlink:href", function(d) {
-        return "./images/images/" + d.image;
-      })
-      .attr("width", function(d) {
-        return d.radius * 1.8;
-      })
-      .attr("height", function(d) {
-        return d.radius * 1.8;
-      })
-      .style("fill", function(d, i) {
-        return "url(#skill" + i + ")";
-      });
+          .attr("xlink:href", function(d) {
+            return "./images/images/" + d.image;
+          })
+          .attr("width", function(d) {
+            return d.radius * 1.8;
+          })
+          .attr("height", function(d) {
+            return d.radius * 1.8;
+          })
 
     svg
       .selectAll("circle")
       .data(nodes.slice(1))
       .enter()
       .append("circle")
-      .attr("color", "#000")
-      .attr("class", "ball")
-      .attr("r", function(d) {
-        return d.radius;
-      })
-      .style("fill", "#000")
-      .style("fill", function(d, i) {
-        return "url(#skill" + i + ")";
-      })
+      // .attr("stroke", "#000")
+          .attr("r", function(d) {
+            return d.radius;
+          })
+          .style("fill", function(d, i) {
+            return "url(#skill" + i + ")";
+          })
 
     force.on("tick", function(e) {
       var q = d3.geom.quadtree(nodes),
