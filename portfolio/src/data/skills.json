@@ -23,6 +23,14 @@
   "level": "5"
 },
 {
+  "title": "D3",
+  "description": "Details",
+  "display_id": "19",
+  "featured": "false",
+  "image": "d3js-original.svg",
+  "level": "5"
+},
+{
   "title": "Docker",
   "description": "Details",
   "display_id": "4",
@@ -36,6 +44,14 @@
   "display_id": "5",
   "featured": "false",
   "image": "express-original-wordmark.svg",
+  "level": "5"
+},
+{
+  "title": "Git",
+  "description": "Details",
+  "display_id": "20",
+  "featured": "false",
+  "image": "git-original.svg",
   "level": "5"
 },
 {
@@ -84,6 +100,14 @@
   "display_id": "11",
   "featured": "false",
   "image": "jquery-original.svg",
+  "level": "5"
+},
+{
+  "title": "mySQL",
+  "description": "Details",
+  "display_id": "21",
+  "featured": "false",
+  "image": "mysql-original.svg",
   "level": "5"
 },
 {
