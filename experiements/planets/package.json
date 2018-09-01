@@ -1,0 +1,20 @@
+{
+  "name": "planets",
+  "version": "1.0.0",
+  "description": "csv https://github.com/kristinriebe/solarsystem-workshop/blob/master/planets.csv",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
