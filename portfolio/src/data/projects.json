@@ -12,7 +12,7 @@
   },
 {
   "title": "What's That",
-  "description": "An iPhone app let's you take a picture and it says out loud what is in the image. Using the Clarifai API to determine what concepts are in the image and using the react-native-speech npm package to create audio output to describe what is in the image.",
+  "description": "An iPhone app let's you take a picture and it says out loud what is in the image. Using the Clarifai API to determine what concepts are in the image and using the react-native-speech npm package to create audio output to describe What's That.",
   "display_id": "2",
   "featured": "false",
   "github": "whats-that-rn",

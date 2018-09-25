@@ -26,7 +26,7 @@ class About extends Component {
           </p>
           <p>
             I'm looking for an opportunity that will allow me to continue
-            creating exciting apps while exploring the newest techonologies.
+            creating exciting apps while exploring the newest technologies.
           </p>
         </div>
       </div>
