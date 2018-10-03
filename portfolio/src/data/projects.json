@@ -25,7 +25,7 @@
   "description": "A game that is insprired by the arcade game Beer Tapper. The rules are simple. 1. Serve your customers a beer before they reach the end of the bar. 2. Don’t over pour. 3. Collect your empty glasses.",
   "display_id": "3",
   "featured": "false",
-  "github": "beer-tapper-js/blob/master/js/app.js",
+  "github": "beer-tapper-js/tree/master/public",
   "image": "beer.png",
   "techonologies": "JavaScript, CSS",
   "url": "projects/beer-tapper-js/"
