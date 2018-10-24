@@ -17,7 +17,7 @@ class NavBar extends Component {
           <NavLink to="/projects" activeClassName="active">Projects</NavLink>
           <NavLink to="/contact" activeClassName="active">Contact</NavLink>
           <a
-            href="http://tarafenton.com/resume/Tara%20Fenton.pdf"
+            href="http://tarafenton.com/resume/TaraFenton.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
